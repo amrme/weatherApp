@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Weather App | freeCodeCamp</title>
+    <link rel="stylesheet" href="css/bootstrap-4.0.0-alpha.2/dist/css/bootstrap.css" >
+    <link rel="stylesheet" href="css/custom.css" >
+  </head>
+  <body>
+    <div class="container">
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8" id="app">
+      <!--   put the button -->
+      <button class="btn btn-info" id="call-btn" style="margin-top:100px;">F</button>
+      <!-- reading -->
+      <div class="col-sm-6">
+        <h2 class="text-center" id="reading">Some Temp</h2>
+      </div>
+      <!-- Icon -->
+      <div class="col-sm-6">
+        <!-- Sunny day -->
+        <div class="icon sunny hidden">
+          <div class="sun">
+            <div class="rays"></div>
+          </div>
+        </div>
+
+        <div class="icon sun-shower hidden">
+          <div class="cloud"></div>
+          <div class="sun">
+            <div class="rays"></div>
+          </div>
+          <div class="rain"></div>
+        </div>
+
+        <div class="icon thunder-storm hidden">
+          <div class="cloud"></div>
+          <div class="lightning">
+            <div class="bolt"></div>
+            <div class="bolt"></div>
+          </div>
+        </div>
+
+        <div class="icon cloudy hidden">
+          <div class="cloud"></div>
+          <div class="cloud"></div>
+        </div>
+
+        <div class="icon cloudy clear">
+          <div class="cloud"></div>
+        </div>
+
+        <div class="icon flurries hidden">
+          <div class="cloud"></div>
+          <div class="snow">
+            <div class="flake"></div>
+            <div class="flake"></div>
+          </div>
+        </div>
+
+        <div class="icon rainy hidden">
+          <div class="cloud"></div>
+          <div class="rain"></div>
+        </div>
+        <!-- the description of the weather -->
+        <h3 class="text-center" id="desc"></h3>
+      <!--   for debugging issues       -->
+       <h4 id="debugger"></h4>
+      </div>
+    </div>
+    <div class="col-sm-2"></div>
+  </div>
+</div>
+  <script type="text/javascript" src="js/min/main-min.js"></script>
+  </body>
+</html>
